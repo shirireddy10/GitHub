@@ -1,0 +1,218 @@
+Assignment On String Class
+1.write an appn to determine the length of the string str="Hello world"?
+ public class Javastrings
+{
+	
+
+public static void main(String args[])
+{
+	
+	String str="Hello World";
+	int s1=str.length();
+	System.out.println("length of string is "+s1);
+}
+}
+2.write an appln to join 2 strings "Hello" and  "How are you?"public class Javastrings
+{
+	
+
+public static void main(String args[])
+{
+	
+	String str1="Hello";
+	String str2=" how are you?";
+	String str3=str1.concat(str2);
+	System.out.println("joining both the strings "+str3);
+}
+}
+3.Given String "Java String pool refers to collection of strings which are stored in heap memory"
+A.print the string to console in lowercase?
+public class Javastrings
+{
+	
+
+public static void main(String args[])
+{
+	
+	String str="Java String pool refers to collection of strings which are stored in heap memory";
+	String s1=str.toLowerCase();
+	System.out.println("s1 is " +s1);
+}
+}
+B.uppercase?
+Apublic class Javastrings
+{
+	
+
+public static void main(String args[])
+{
+	
+	String str="Java String pool refers to collection of strings which are stored in heap memory";
+	String s1=str.toUpperCase();
+	System.out.println("s1 is " +s1);
+}
+}
+C:Replace all a character in the string with $ sign?
+public class Javastrings
+{
+	
+
+public static void main(String args[])
+{
+	
+	String str="Java String pool refers to collection of strings which are stored in heap memory";
+	String s1=str.replace("a", "$");
+	System.out.println("s1 is " +s1);
+}
+}
+D:check if the original string contains word collection?
+public class Javastrings
+{
+	
+
+public static void main(String args[])
+{
+	
+	String str="Java String pool refers to collection of strings which are stored in heap memory";
+	if(str.contains("collection"))
+	{
+	System.out.println("string contains collection word");
+	}
+	else
+		System.out.println("string does't contain the specific word");
+}
+}
+E:check if the following string "java string pool refer to collection of strings which are stored in heap memory" matches the original
+public class Javastrings
+{
+	
+
+public static void main(String args[])
+{
+	
+	String str1="Java String pool refers to collection of Strings which are stored in heap memory";
+	String str2="java string pool refer to collection of strings which are stored in heap memory";
+	if(str1.equals(str2))
+	{
+	System.out.println("strings are same");
+	}
+	else
+		System.out.println("strings are not same");
+}
+}
+output:strings are not same
+F:If the String does not match check if there is another method which can be used to check if the strings are equal
+public class Javastrings
+{
+	
+
+public static void main(String args[])
+{
+	
+	String str1="Java String pool refers to collection of Strings which are stored in heap memory";
+	String str2="java string pool refer to collection of strings which are stored in heap memory";
+	if(str1.compareTo(str2)==0)
+	{
+	System.out.println("strings are same");
+	}
+	else
+		System.out.println("strings are not same");
+}
+}
+output:strings are not same
+
+Assignments on string bufferclass:
+
+1 :public class Mydemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer sb=new StringBuffer("StringBuffer");
+		sb.append(" is a peer class of string");
+		sb.append(" that provides much of");
+		sb.append(" the functionality of strings");
+        System.out.println("Appended string is:"+sb);
+	}
+
+}
+
+o/p:Appended string is:StringBuffer is a peer class of string that provides much of the functionality of strings
+
+2.public class Mydemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer sb=new StringBuffer("it is used to at the specified index position");
+		sb.insert(14, "insert text ");
+		
+        System.out.println("string is:"+sb);
+	}
+
+}
+o/p:string is:it is used to insert text at the specified index position
+
+3:
+public class Mydemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer sb=new StringBuffer("This method returns the reversed object on which it was called");
+		sb.reverse();
+		
+        System.out.println("Reversed string is:"+sb);
+	}
+
+}
+o/p:string is:delac saw ti hcihw no tcejbo desrever eht snruter dohtem sihT
+
+Assignments on string builder:
+1.public class Javastrings
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuilder sb=new StringBuilder("String Builder");
+		sb.append(" is a peer class of string");
+		sb.append(" that provides much of");
+		sb.append(" the functionality of strings");
+        System.out.println("Appended string is:"+sb);
+	}
+
+
+
+}
+
+2.
+public class Javastrings
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuilder sb=new StringBuilder("it is used to at the specified index position");
+		sb.insert(14, "insert text ");
+		
+        System.out.println("string is:"+sb);
+	}
+
+
+}
+
+
+3.public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer sb=new StringBuffer("This method returns the reversed object on which it was called");
+		sb.reverse();
+		
+        System.out.println("Reversed string is:"+sb);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
