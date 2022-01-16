@@ -1,0 +1,210 @@
+Q1.
+package abcd;
+
+import java.util.HashSet;
+import java.util.Set;
+
+
+public class Employee {
+
+    private int empId,empSalary;
+    private String empName,empDept;
+
+    public Employee(int empId, String empName,int empSalary,String empDept) {
+        super();
+        this.empId = empId;
+        this.empName = empName;
+        this.empSalary=empSalary;
+        this.empDept=empDept;
+    }
+
+   
+    public final int getEmpId() {
+        return empId;
+    }
+
+
+    public final void setEmpId(int empId) {
+        this.empId = empId;
+    }
+
+
+    public final String getEmpName() {
+        return empName;
+    }
+
+
+    public final void setEmpName(String empName) {
+        this.empName = empName;
+    }
+    public final int getEmpSalary() {
+        return empSalary;
+    }
+    public final void setEmpSalary(int empSalary) {
+        this.empSalary = empSalary;
+
+    }
+    
+  
+    public String getEmpDept() {
+		return empDept;
+	}
+
+
+	public void setEmpDept(String empDept) {
+		this.empDept = empDept;
+	}
+
+
+	public String toString() {
+        return "Employee [empId=" + empId + ", empName=" + empName + ",empSalary=" + empSalary +",empDept="+ empDept +"]";
+    }
+
+    
+    public int hashCode() {
+        return this.empId;
+    }
+    
+    
+    public boolean equals(Object obj) {
+        Employee employee = (Employee) obj;
+        if (employee.empId == this.empId) {
+            employee.setEmpName(this.empName);
+            employee.setEmpSalary(this.empSalary);
+            employee.setEmpDept(this.empDept);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public void details(int empId,String empName,int empSalary,String empDept)
+    {
+    	System.out.println(empId);
+    	System.out.println(empName);
+    	System.out.println(empSalary);
+    	System.out.println(empDept);
+    
+    }
+
+
+    public static void main(String[] args) {
+        Set<Employee> employees = new HashSet<>();
+        employees.add(new Employee(1, "vanga" ,30000, "Finance"));
+        
+        System.out.println(employees);
+        
+     Employee emp1 = new Employee(0,null,0,null);
+        
+        emp1.details(1,"vanga",30000,"Finance");
+    }
+}
+
+o/p:[Employee [empId=1, empName=vanga,empSalary=30000,empDept=Finance]]
+1
+vanga
+30000
+Finance
+
+
+2.
+package abcd;
+import java.util.HashMap;
+
+//Main class
+public class GFG {
+
+ // Main driver method
+ public static void main(String[] args)
+ {
+     // Create an empty hash map by declaring object
+     // of string and integer type
+     HashMap<Integer, Double> map = new HashMap<>();
+
+     // Adding elements to the Map
+     // using standard add() method
+     map.put(10,12.00);
+     map.put(20,13.00);
+     map.put(30,14.00);
+     map.put(40,15.00);
+     map.put(50,16.00);
+     map.put(60,17.00);
+     map.put(70,18.00);
+     map.put(80,19.00);
+     map.put(90,20.00);
+     map.put(100,21.00);
+     // Print size and content of the Map
+     System.out.println("Size of map is:- "
+                        + map.size());
+
+     // Printing elements in object of Map
+     System.out.println(map);
+
+     
+ }
+}
+o/p:Size of map is: 10
+{80=19.0, 50=16.0, 20=13.0, 100=21.0, 70=18.0, 40=15.0, 10=12.0, 90=20.0, 60=17.0, 30=14.0}
+
+
+3.package array;
+import java.util.Scanner;
+public class ArrayTricks {
+	public static void main(String[] args)
+	{
+	int[] numbers= {4,1,8,3,5};
+	int src=0;
+	int dest=1;
+	int temp = numbers[src];
+	numbers[0]=numbers[1];
+	numbers[1]=temp;
+	for(int i=0;i<numbers.length;i++)
+		System.out.print(numbers[i]+" ");
+
+
+}
+}
+o/p:1 4 8 3 5 
+
+
+4.
+package abcd;
+import java.util.*;
+public class Pair {
+	public static void main(String args[])
+	{
+		Map<String,String> map=new HashMap<>();
+		map.put("Hi","shirisha");
+		map.put("hello","vanga");
+		System.out.println(map);
+	}
+
+}
+o/p:{Hi=shirisha, hello=vanga}
+ 
+ 4B:
+package abcd;
+import java.util.*;
+public class Pair {
+	public static void main(String args[])
+	{
+		Map<String,String> map=new HashMap<>();
+		map.put("Hi","java.util.Date()");
+		
+		System.out.println(map);
+	}
+
+}
+o/p:
+{Hi=java.util.Date()}
+
+
+
+
+
+
+
+
+
+
+
+
